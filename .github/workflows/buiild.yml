@@ -1,0 +1,17 @@
+name: build
+
+on: 
+  push:
+      branches:
+           - main
+
+env:
+  NODE_VERSION: 14
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check formatting
+        run: yarn prettier

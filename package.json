@@ -1,0 +1,17 @@
+{
+  "name": "cilint",
+  "version": "1.0.0",
+  "description": "text prettier lint ci",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --check \"**/*.{ts,js,mjs,json,md}\"",
+    "prettier-fix": "prettier --write \"**/*.{ts,js,mjs,json,md}\""
+  },
+  "author": "Rahul Gautam Singh",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}
