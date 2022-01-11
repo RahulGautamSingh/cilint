@@ -4,7 +4,8 @@
   "description": "text prettier lint ci",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "jest": "jest --env=node",
     "prettier": "prettier --check \"**/*.{ts,js,mjs,json,md}\"",
     "prettier-fix": "prettier --write \"**/*.{ts,js,mjs,json,md}\""
   },
@@ -12,6 +13,8 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "jest": "^27.4.7",
     "prettier": "^2.5.1"
-  }
+  },
+  "type": "module"
 }
