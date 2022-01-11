@@ -1,9 +1,9 @@
 name: build
 
-on: 
+on:
   push:
-      branches:
-           - main
+    branches:
+      - main
 
 env:
   NODE_VERSION: 14
@@ -13,5 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check formatting
+      - uses: actions/checkout@v1
+      - name: Check Formatting
         run: yarn prettier
